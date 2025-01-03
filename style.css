@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap%27');
+
+/*  header  */
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #161515;
+    overflow-x: hidden;
+}
+.ContentBodyIndex{
+    background-color: #FFFFFF;
+}
+
+.NavBar{
+    position: fixed;
+    z-index: 100;
+    transition: 0.5s ease;
+    margin: auto;
+    background-color: rgba(36, 31, 31, 0.7);
+}
+
+@media (max-width: 991.98px){
+    .NavBar{
+        background-color: rgba(36, 31, 31, 1);
+    }
+}
+
+.NavBar .logo img{
+    width: 70px;
+    height: 70px;
+    transform: scale(2.5);
+}
+
+@media (max-width: 767.98px){
+    .NavBar .logo{
+        text-align: center;
+    }
+    .BackgroundImage{
+        width: 97vw !important;
+    }
+}
+
+.NavBar ul{
+    height: 70px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.NavBar ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+    transition: 0.3s ease;
+}
+.NavBar .ulList a:hover{
+    color: #FF5159;
+    border-bottom: 1px solid #FF5159;
+}
+
+.NavBar ul .signIn{
+    
+    transition: 0.3s ease;
+}
+@media (min-width: 768px){
+    .NavBar ul .signIn{
+        padding: 10px;
+        background-color: #FF5159;
+        border-radius: 15%;
+    }
+    .NavBar ul .signIn:hover{
+        box-shadow: 0 0 10px gray;
+    }
+    .NavBar ul .signIn a:hover{
+        color: white;
+        border: none;
+    }    
+}
+
+
+/*  home page  */
+
+/* background image */
+.BackgroundImage{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: url('Image/Background2.jpg') no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+@media (min-width: 1700px){
+    .BackgroundImage{
+        width: 99vw;
+    }
+}
+
+.ContentBackImage{
+    height: 100vh;
+}
+
+.ContentBackImage div{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ContentBackImage div h1, .ContentBackImage div h2{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    opacity: 2;
+    transform: scale(1.1);
+}
+@media (max-width: 991.98px){
+    .ContentBackImage div h1, .ContentBackImage div h2{
+        font-size: 30px;
+        transform: scale(1);
+    }
+    .ContentBackImage .slogan{
+        width: 100%;
+    }
+}
+
+.ContentBackImage div span{
+    color: #FF5159;
+}
+
+.ContentBackImage div button{
+    margin-top: 30px;
+    background-color: #FF5159;
+    padding: 10px;
+    border: 1px solid #FF5159;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+.ContentBackImage div button:hover{
+    box-shadow: 0 0 10px gray;
+}
+.ContentBackImage div button a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+/* About us */
+
+#AboutUs{
+    color: black;
+}
+
+#AboutUs > div{
+    border-radius: 20px;
+    margin: auto;
+}
+@media (min-width: 1500px){
+    #AboutUs > div{
+        width: 90%;
+    }
+}
+
+#AboutUs h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: red;
+}
+
+#AboutUs div .aboutlist{
+    justify-content: space-evenly;
+}
+#AboutUs div .aboutlist > div{
+    width: 40%;
+    padding: 10px;
+    list-style-type: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    color: gray;
+}
+
+#AboutUs div .aboutlist > div div{
+    margin-left: 30px;
+}
+#AboutUs div .aboutlist > div img{
+    width: 95px;
+    height: 95px;
+}
+
+#AboutUs div .aboutlist > div h5{
+    font-weight: bold;
+    color: red;
+}
+
+
+#AboutUs div .aboutlist > div:hover{
+    background-color: rgba(56, 28, 28, 0.1);
+    cursor: pointer;
+}
+@media (max-width: 767.98px){
+    #AboutUs div .aboutlist > div{
+        text-align: center;
+    }
+}
+@media (max-width: 991.98px){
+    #AboutUs div .aboutlist > div{
+        width: 100%;
+        margin: auto;
+        font-size: 16px;
+    }
+}
+
+
+#AboutUs .Trainer{
+    margin-top: 13%;
+}
+
+#AboutUs .Trainer h1 {
+    color: black;
+    margin-bottom: 6%;
+}
+#AboutUs .Trainer h1 span{
+    color: #FF5159;
+}
+
+#AboutUs .Trainer article{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+#AboutUs .Trainer article .Box{
+    width: 23%;
+    margin: auto;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    margin-bottom: 2%;
+}
+
+@media (max-width: 1199.98px) and (min-width: 768px){
+    #AboutUs .Trainer article .Box{
+        width: 30%;
+    }
+}
+@media (max-width: 767.98px)  {
+    #AboutUs .Trainer article .Box{
+        width: 100%;
+        margin-bottom: 20%;
+    }
+}
+@media (max-width: 800px) and (min-width: 576px){
+    #AboutUs .Trainer article .Box{
+        width: 50%;
+        margin-bottom: 15%;
+    }
+}
+
+#AboutUs .Trainer article .Box > div{
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#AboutUs .Trainer article .Box .Image{
+    margin-bottom: 5%;
+}
+
+#AboutUs .Trainer article .Box .Image img{
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+
+#AboutUs .Trainer article .Box .Description {
+    width: 100%;
+    height: 170px;
+    margin-top: 5%;
+    color: gray;
+    font-weight: 600;
+    word-spacing: 4px;
+    word-break: break-word;
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    #AboutUs .Trainer article .Box .Description {
+        height: 200px;
+    }
+}
+
+
+#AboutUs .Trainer article .Box h4, #AboutUs .Trainer article .Box h2{
+    font-weight: 600;
+}
+
+#AboutUs .Trainer article .Box h2{
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+#AboutUs .Trainer article .Box .TrainingType h4{
+    color: #FF5159;
+    font-size: 17px;
+}
+
+#AboutUs .Trainer article .Box .Trainer-SocialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+#AboutUs .Trainer article .Box .Trainer-SocialMedia i{
+    padding: 5px;
+    font-size: 20px;
+    box-shadow: 0 0 7px black;
+    border-radius: 50%;
+    color: black;
+    font-weight: bold;
+}
+
+/* Contact Us */
+
+#ContactUs{
+    background-color: #c5b9b9;
+}
+
+#ContactUs > div{
+    margin: auto;
+    padding: 20px;
+}
+
+#ContactUs > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 20px;
+    color: black;
+}
+
+#ContactUs > div > div div{
+    padding: 15px;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+#ContactUs > div > div > div:hover{
+    background-color: rgba(56, 28, 28, 0.1);
+    cursor: pointer;
+}
+
+@media (max-width: 991.98px){
+    #ContactUs > div > div{
+        font-size: 16px;
+    }
+}
+
+#ContactUs > div > div i{
+    border: 1px solid #FF5159;
+    border-radius: 50%;
+    color: #FF5159;
+    padding: 10px;
+    margin-right: 1px;
+}
+
+#ContactUs .SocialMedia i{
+    transform: scale(1.1);
+}
+
+#ContactUs > div form{
+    background-color: rgb(255, 255, 255, 0.6);
+    width: 30%;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#ContactUs > div form legend{
+    color: #FF5159;
+    font-weight: bold;
+}
+
+#ContactUs > div form input{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+
+#ContactUs > div form textarea{
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+}
+
+@media (max-width: 1199.98px) and (min-width: 768px){
+    #ContactUs > div form{
+        width: 40%;
+    }
+    #ContactUs > div form input{
+        width: 80%;
+    }
+    #ContactUs > div form textarea{
+        width: 80%;
+    }
+}
+@media (max-width: 767.98px){
+    #ContactUs > div > div{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    #ContactUs > div form{
+        margin: auto;
+        width: 100%;
+    }
+    #ContactUs > div form input{
+        width: 100%;
+    }
+    #ContactUs > div form textarea{
+        width: 100%;
+    }
+}
+
+#ContactUs > div form #submit{
+    background: #FF5159;
+    color: white;
+}
+
+
+#ContactUs .Copyright{
+    color: black;
+    text-align: center;
+    font-size: 19px;
+}

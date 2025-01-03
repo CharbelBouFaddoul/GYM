@@ -1,0 +1,109 @@
+
+/* Shop */
+
+body{
+    background-color: white;
+}
+
+.Products .container .Title{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (max-width: 991.98px){
+    .Products .container .Title{
+        height: 35vh;
+    }
+}
+
+.Products .container .Product-Type{
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+.Products .container .Product-Type .Box{
+    width: 20%;
+    min-width: 250px;
+    padding:10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor:pointer;
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 ,0.02);
+    margin: auto;
+    margin-bottom: 30px;
+    transition: 1s ease;
+    position: relative;
+}
+
+.Products .container .Product-Type .Box:hover{
+    box-shadow: 20px 20px 30px rgba(0 ,0 ,0 ,0.20);
+}
+
+.Products .container .Product-Type .Box img{
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #cce7d0;
+}
+
+
+.Products .container .Product-Type .Box .info{
+    text-align: start;
+    padding: 10px 0;
+}
+.Products .container .Product-Type .Box .info h5{
+    padding-top:7px;
+    color:#1a1a1a;
+    font-size:14px;
+}
+.Products .container .Product-Type .Box .info h4, .Products .container .Product-Type .Box h4 span{
+    padding-top:7px;
+    color:#088178;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.Products .container .Product-Type .Box .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight:500;
+    color:#088178;
+    border: 1px solid #cce7d0;
+    bottom: 20px;
+}
+.Products .container .Product-Type .Box .cart i{
+    margin-left: 10px;
+}
+
+.Products .container .Product-Type .Box .button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Products .container .Product-Type .Box .button .removeP{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight:500;
+    color:#088178;
+    bottom: 20px;
+}
+
+.Products .container .Product-Type .Box .button .removeP p{
+    margin-left: 15px;
+}
+
+.quantity{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight:500;
+    color:#088178;
+    bottom: 20px;
+}

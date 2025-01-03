@@ -1,0 +1,47 @@
+
+/*  Membership  */
+
+
+.Membership{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.Membership > div{
+    height: 250px;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+    transition: 0.3s ease;
+}
+.Membership > div:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
+
+.Membership > div h1{
+    color: red;
+}
+
+.Membership > div h2{
+    color: #60AF99;
+    font-weight: 600;
+}
+
+.Membership > div h2 span{
+    color: black;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.Membership > div .Time{
+    font-size: 17px;
+    font-weight: bold;
+}

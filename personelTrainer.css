@@ -1,0 +1,136 @@
+body{
+    background-color: white;
+}
+
+.Trainer{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.Trainer h1 {
+    color: black;
+    margin-bottom: 6%;
+}
+.Trainer h1 span{
+    color: #FF5159;
+}
+
+.Trainer article{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+.Trainer article .Box{
+    width: 23%;
+    margin: auto;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    margin-bottom: 2%;
+}
+
+@media (max-width: 1199.98px) and (min-width: 768px){
+    .Trainer article .Box{
+        width: 30%;
+    }
+}
+@media (max-width: 767.98px)  {
+    .Trainer article .Box{
+        width: 100%;
+        margin-bottom: 20%;
+    }
+}
+@media (max-width: 800px) and (min-width: 576px){
+    .Trainer article .Box{
+        width: 50%;
+        margin-bottom: 15%;
+    }
+}
+
+.Trainer article .Box > div{
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.Trainer article .Box .Image{
+    margin-bottom: 5%;
+}
+
+.Trainer article .Box .Image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.Trainer article .Box .Description {
+    width: 90%;
+    height: 170px;
+    margin-top: 5%;
+    color: gray;
+    font-weight: 600;
+    word-spacing: 4px;
+    word-break: break-word;
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .Trainer article .Box .Description {
+        height: 200px;
+    }
+}
+
+
+.Trainer article .Box h4, .Trainer article .Box h2{
+    font-weight: 600;
+}
+
+.Trainer article .Box h2{
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.Trainer article .Box .TrainingType h4{
+    color: #FF5159;
+    font-size: 17px;
+}
+
+.Trainer article .Box .Trainer-SocialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+.Trainer article .Box .Trainer-SocialMedia i{
+    padding: 5px;
+    font-size: 20px;
+    box-shadow: 0 0 7px black;
+    border-radius: 50%;
+    color: black;
+    font-weight: bold;
+}
+
+
+.Trainer .PageNumber{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Trainer .PageNumber a{
+    width: 50px;
+    box-shadow: 0 0 5px black;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.Trainer .PageNumber a:hover{
+    background-color: rgba(8, 8, 8, 0.1);
+    cursor: pointer;
+}
